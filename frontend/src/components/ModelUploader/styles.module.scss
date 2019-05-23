@@ -1,0 +1,342 @@
+@import "./../../config/variables.scss";
+
+.RootDivision {
+    .UploadDivision {
+        margin: 1.5em 4em;
+        .FilterDivision {
+            .InnderDivision {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 0.2em 0em;
+                height: 25px;
+                .TextDivision {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin: 0em 0em 0em 1em;
+                    width: 100%;
+                    .Text, .TextSelected {
+                        margin: 0em 0.6em;
+                        font-size: 0.9em;
+                        text-align: center;
+                        color: $dark-gray;
+                        cursor: pointer;
+                    }
+                    .TextSelected {
+                        color: $nav-bg-music-selected-color;
+                    }
+                }
+            }
+        }
+        .TermsDivision {
+            margin-left: 0.5em;
+            margin-bottom: 3em; 
+            .checkBoxDivision {                    
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                .TermsCheckBox {
+                    
+                } 
+                .Text {
+                    margin-left: 0.5em !important;
+                    padding-top: 0.1em;
+                }                   
+            }
+            .Text {
+                margin: 0.5em 0em;
+            }
+        }
+        .DetailInfoDivision {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 2em 0em;
+            .LeftBoxDivision {
+                background-color: $nav-bg-music-selected-color;
+                width: 11em;
+                height: 13em;
+                margin : 0em 1em 0em 0em;
+                display: flex;
+                align-items: center;
+                justify-content: center;                
+                .Text {                    
+                    max-width: 7em;
+                    color: white;
+                    text-align: center;
+                }
+            }
+            .RightInputDivision {
+                width: 100%; 
+                margin: 0;
+                padding: 0em;
+                .OutterDivision {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin: 0.5em 0em;
+                    .TitleTextDivision {
+                        width: 13em !important;
+                        .Text {                            
+                            color: black;
+                            margin: auto 0em;
+                            text-align: left;
+                        }
+                    }
+                    .InputBox {         
+                        flex:1;                                    
+                        opacity: 1 !important;
+                        input {
+                            border-radius: 0 !important;
+                            padding: 0em !important;
+                            margin: 0em !important;
+                            padding-left: 1em !important;
+                            height: 2em !important;
+                            color: black;
+                            border-color: $dark-gray !important;                            
+                        }
+                    }
+                    .BodySizeDivision, .BirthdayDivision {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-around;
+                        flex:1;                        
+                        .InputDivision {                            
+                            width: 100%;
+                            .InputBox {
+                                opacity: 1 !important;
+                                input {
+                                    border-radius: 0 !important;
+                                    padding: 0 1em !important;
+                                    margin: 0em !important;
+                                    height: 2em !important;
+                                    color: black;
+                                    border-color: $dark-gray !important;           
+                                    text-align: center;                 
+                                }
+                                input[type=number]::-webkit-inner-spin-button, 
+                                input[type=number]::-webkit-outer-spin-button { 
+                                    -webkit-appearance: none;
+                                    -moz-appearance: none;
+                                    appearance: none;
+                                    margin: 0; 
+                                }
+                                input::placeholder {
+                                    color: $dark-gray;    
+                                    font-style: italic !important; 
+                                }
+                            }
+                        }
+                        .TextDivision {
+                            margin: 0em;
+                            .Text {
+                                text-align: center;
+                                padding: 0em 1em;
+                            }
+                        }
+                    }
+                }
+                .Outter2Division {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 0em 0em;
+                    .LeftInputDivision, .rightInputDivision {                        
+                        .InnerDivision {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            .TitleTextDivision {
+                                margin-right: 1em;
+                                .Text {                                    
+                                    color: black;
+                                    margin: auto 0em;
+                                    text-align: left;
+                                }
+                            }
+                            .UnitText {
+                                margin-left: 0.5em;
+                            }
+                            .DropDownDivision {
+                                width: 9em;               
+                                opacity: 1 !important;   
+                                border-radius: 0 !important;
+                                padding: 0em !important;
+                                margin: 0em !important;
+                                padding-right: 1em !important;
+                                height: 2em !important;
+                                color: black;
+                                border-color: $dark-gray !important;                                
+                                div[role=listbox]{
+                                    border-radius: 0;
+                                    color: black;
+                                    border-color: $dark-gray !important;  
+                                }
+                                div[id=model_blood_type] { 
+                                    min-height: 0;
+                                    height: 2em;
+                                    border-radius: 0;
+                                    color: black;
+                                    border-color: $dark-gray !important;  
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    justify-content: center;
+                                    input {
+                                        bottom: 0;
+                                    }
+                                }
+                                i {
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                            }
+                            .InputBox {         
+                                width: 6em;               
+                                opacity: 1 !important;                                
+                                input {
+                                    border-radius: 0 !important;
+                                    padding: 0em !important;
+                                    margin: 0em !important;
+                                    padding-right: 1em !important;
+                                    height: 2em !important;
+                                    color: black;
+                                    border-color: $dark-gray !important;                            
+                                    text-align: right;
+                                }
+                                input[type=number]::-webkit-inner-spin-button, 
+                                input[type=number]::-webkit-outer-spin-button { 
+                                    -webkit-appearance: none;
+                                    -moz-appearance: none;
+                                    appearance: none;
+                                    margin: 0; 
+                                }
+                            }
+                        }
+                    }
+                }
+            }            
+        }
+        .DescriptionTextDivision {
+            margin: 2em 0em 0em 0em;
+            input {
+                width: 100%;
+                border-radius: 0 !important;
+                padding: 0em !important;
+                margin: 0em !important;
+                padding-left: 1em !important;
+                height: 2em !important;
+                border-color: $dark-gray;
+            }
+            textarea {
+                width: 100%;
+                align-items: flex-start !important;
+                justify-content: flex-start !important;
+                min-height: 10em !important;
+                color: black;
+                padding-left: 1em !important;
+                border-color: $dark-gray;
+                padding-top: 0.3em !important;
+            }
+            textarea::placeholder {
+                color: $dark-gray;    
+                font-style: italic !important; 
+            }
+        }
+        .SelectFileFormDivision {
+            margin: 2em 0em 0em 0em;
+            width: 100%;
+            .SelectFileDivision {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;          
+                margin: 0.5em 0em 0.5em 0.2em;    
+                padding: 0em;  
+                .SelectedInput{      
+                    width: 36.5em;
+                    height: 2em;
+                    border: 1px solid $dark-gray;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;    
+                    color: $dark-gray;
+                    font-style: italic;
+                    input {
+                        padding: 0em !important;
+                        margin: 0em;
+                        border-radius: 0em;
+                        width: 0.1px;
+                        height: 0.1px;
+                        opacity: 0;
+                        overflow: hidden;
+                        position: absolute;
+                        z-index: -1;
+                    }
+                    .FilenameText, .FilenamePlaceholderText {
+                        margin-left: 1em;
+                    }
+                    .FilenameText {                        
+                        color: black;
+                    }                    
+                    .FilenamePlaceholderText {
+                        font-style: italic;
+                        color: $dark-gray;
+                    }
+                }
+                .RightDivision{
+                    cursor: pointer;           
+                    margin-left: 0.5em;               
+                    .DefaultIconDivision {
+                        margin: 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;    
+                        height: 2em;
+                    }
+                }
+            }
+        }        
+    }
+    .SubmitDivision {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 2em;        
+        .SubmitButton {
+            width :15em;    
+            background-color: transparent;
+            border: 2px solid $nav-bg-music-selected-color;
+            color: $nav-bg-music-selected-color;
+            border-radius: 0em;
+        }
+    }
+}
+
+.DefaultIconDivision {
+    padding: 0.1em 0em;
+    margin: auto 0.2em;
+    background-color: $nav-bg-music-selected-color;
+    width: 8em;
+    .DefaultIconText {
+        color: white;
+        text-align: center;
+    }
+}
+
+.StarText {
+    color: red;
+    position: relative;
+    bottom: 0.1em;
+    margin-right: 0.2em;    
+}

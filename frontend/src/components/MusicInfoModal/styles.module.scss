@@ -1,0 +1,152 @@
+@import "./../../config/variables.scss";
+
+.ModalDivision {
+    text-align: center;
+    color: black;
+    .OutterDivision {
+        max-width: $max-page-width-upload;
+        padding: 4em 5em;
+
+        .ButtonDivision {
+            margin-top: 3em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .CloseButton {
+                padding :0.5em 2em;
+                margin: 0.5em;
+                border: 2px solid $home-menu-bg-color;
+                cursor: pointer;
+                .Text {
+                    color: $home-menu-bg-color;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .MusicInfoDivision {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .PhotoDivision {
+                .Photo {
+                    max-width: 160px;
+                    max-height: 160px;
+                }
+                margin-right: 1em;
+            }
+            .InfoDivision {
+                flex:1;
+                .InnerDivision {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;    
+                    margin: 1em 0em;                            
+                    .LeftDivision, .RightDivision { 
+                        text-align: left;          
+                        border-bottom: 1px solid $home-menu-bg-color;
+                        padding: 0.2em 0em 0.2em 1em;
+                        .Text {
+                            width: 100%;
+                        }
+                    }
+                    .LeftDivision {
+                        flex: 4;
+                        margin-right: 0.2em;
+                        .Text {
+                            color: $home-menu-bg-color;
+                        }
+                    }
+                    .RightDivision {
+                        flex: 5;
+                        margin-left: 0.2em;
+                        border-bottom: 1px solid black;
+                        .Text {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        .DescriptionDivision {
+            textarea {
+                width: 100%;
+                align-items: flex-start !important;
+                justify-content: flex-start !important;
+                min-height: 10em !important;
+                color: black;
+                border-color: $dark-gray;
+                padding: 1em !important;
+            }    
+        }
+        .CategoriesDivision {  
+            .Grid {
+                margin: 0;
+                .GridRow {
+                    justify-content: center;
+                    padding: 0;            
+                    width: auto;
+                    .GridColumn {      
+                        margin: 0.2em;
+                        padding: 0em;
+                        width: auto;
+                        .TextDivision {                            
+                            padding: 0.2em 1em;
+                            background-color: $home-menu-bg-color;
+                            border-radius: 10em;  
+                            .Text {
+                                color: white;
+                            }
+                        }   
+                    }
+                }
+            }
+        }
+        .TitleDivision {
+            margin: 3em 0 1em 0;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: center;
+            .LeftSvgIcon {
+                fill: $home-menu-bg-color;
+                margin-right: 0.5em;
+            }
+            .Text{
+                font-size: 2em;
+                color: $home-menu-bg-color;
+            }
+        }
+        .WarningTitleDivision {
+            margin: 2em 0em 1em 0em;
+            .Text {
+                color: $home-menu-bg-color;
+                font-size: 2.5em;
+            }
+        }
+        .WarningDetailDivision {
+            width: 100%;            
+            background-color: $light-gray;
+            .Text {
+                max-width: 30em;
+                color: $home-menu-bg-color;
+                margin: auto;
+                padding: 0.5em;
+            }
+        }
+        .TopLogoDivision {
+            margin: 0em auto ;
+            width: 156px;
+            .LogoImage {                
+            }
+        }    
+        .ModalContentDivision{
+            text-align: center;
+            margin: auto;
+        }
+    }
+}
+

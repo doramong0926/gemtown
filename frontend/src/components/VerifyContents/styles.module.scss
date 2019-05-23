@@ -1,0 +1,95 @@
+@import "./../../config/variables.scss";
+
+.RootDivision {
+    background-color: $light-gray;
+    padding: 2em;
+    .OutterDivision {  
+        max-width: $max-page-width-upload;
+        margin: 0em auto;        
+        background-color: white;
+        .TopLogoDivision {
+            padding-top: 3em;
+            margin: 0em auto 3em auto;
+            width: 156px;
+            .LogoImage {                                
+            }
+        }
+        .SubMenuDivision {
+            margin: 1.5em 4em;
+            .OutterDivision {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                .Text, .TextSelected {
+                    margin: 1em;
+                    text-align: center;
+                    font-size: 1.5em;
+                    color: $dark-gray;
+                    cursor: pointer;
+                }
+                .TextSelected {
+                    color: $nav-bg-music-selected-color !important;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .FooterDivision {
+        font-size: 0.8em;
+        .TopDivision {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .TextDivision {
+                margin: 2em 2em 1em 2em;
+                .Text {
+                    cursor: pointer;
+                    color: $dark-gray;
+                }
+            }
+            .DividerDivision {
+                border-left: 1px solid $dark-gray;
+                height: 1em;
+            }
+        }
+        .BottomDivision {
+            .TextDivision {
+                margin: 0em;
+                .Text {
+                    margin: 0.1em;
+                    color: $dark-gray;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+.DefaultIconDivision {
+    padding: 0.1em 0em;
+    margin: auto 0.2em;
+    background-color: $nav-bg-music-selected-color;
+    width: 6em;
+    .DefaultIconText {
+        color: white;
+        text-align: center;
+    }
+}
+
+.TitleDivision {
+    padding: 0.2em;
+    background-color: $nav-bg-music-selected-color;
+    width: 100%;    
+    .Text {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }   
+}
+
+.Divider {
+    margin: 0em !important; 
+}

@@ -1,0 +1,104 @@
+@import "./../../config/variables.scss";
+
+.RootDivision {
+    background-color: $header-bg-color;
+    color: white;
+    font-size: 0.8em; 
+    .DestopHeader {      
+        max-width: $max-page-width !important;
+        margin-left: auto;
+        margin-right: auto;
+        .DestopInnerHeader {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .LeftItemDivision {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: left;
+                .SvgUserIcon, .SvgIconSetup { 
+                    width: 14.624px;
+                    height: 14.624px;
+                }
+                .SvgUserIcon{
+                    margin-right: 0.2em;
+                }
+                .SvgIconSetup { 
+                    margin-left: 0.5em;
+                    cursor: pointer;                
+                }
+                .UserTypeDivision {
+                    background-color: $nav-bg-basic-color;
+                    padding: 0.2em 1em;
+                    margin: 0.5em;
+                }
+                .UsernameDivision {
+                    margin: 0.5em !important;
+                }
+                .LogInOutDivision {
+                    margin: 0.5em !important;                        
+                    .LogInOutText {
+                        color: yellow;
+                        cursor: pointer;
+                        &:hover {
+                            color: red;
+                        }
+                    }
+                }
+            }    
+            .RightItemDivision {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: right;
+                .UploadDivision, .MyGemDivision, .VerifyDivision {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;  
+                    .SvgIconUpload, .SvgIconGem { 
+                        width: 14.624px;
+                        height: 14.624px;
+                    }
+                    .UploadTextDivision, .MyGemTextDivision, .VerifyTextDivision {            
+                        
+                        margin: 0.5em 0.4em;
+                        .MyGemText{                
+                            padding: 0em;
+                        }
+                        .AmountOfGemText {
+                            margin: 0.5em;
+                            color: yellow;
+                        }
+                    }
+                    .UploadTextDivision, .VerifyTextDivision {            
+                        margin-right: 3em !important;
+                    }
+                }
+                
+                .MyGemDivision {
+                    margin: 0.5em !important;
+                    margin-left: 0.1em !important;
+                    margin-right: 0.1em !important;
+                    .MyGemText{                
+                        padding: 0em;
+                    }
+                    .AmountOfGemText {
+                        margin: 0.5em;
+                        color: yellow;
+                    }
+                }    
+                .AmountOfGemDivision {
+                    margin: 0.5em !important;
+                    margin-left: 0.1em !important;
+                    .AmountOfGemText {
+                        margin: 0.5em;
+                        color: yellow;
+                    }
+                }        
+            }    
+        }
+    }
+}

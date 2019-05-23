@@ -1,0 +1,168 @@
+@import "./../../config/variables.scss";
+
+.ModalDivision {
+    text-align: center;
+    color: black;
+    .OutterDivision {
+        max-width: $max-page-width-upload;
+        padding: 4em 5em;
+
+        .GemAmountDivision {
+            margin: 3em 0em 0.5em 0em;
+            .Text {
+                color: $home-menu-bg-color;
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.5em;
+            }
+        }
+
+        .ButtonDivision {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .SubmitButton, .CancelButton {
+                padding :0.5em 2em;
+                margin: 0.5em;
+                border: 2px solid $home-menu-bg-color;
+                cursor: pointer;
+                .Text {
+                    color: $home-menu-bg-color;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .PersonalInfoDivision {
+            .InfoDivision {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;    
+                margin: 1em 0em;                            
+                .LeftDivision, .RightDivision { 
+                    text-align: center;                    
+                    border-bottom: 1px solid black;
+                    padding: 0.2em 0em;
+                    .Text {
+                        width: 100%;
+                    }
+                }
+                .LeftDivision {
+                    flex: 2;
+                    margin-right: 0.2em;
+                    .Text {
+                        color: $home-menu-bg-color;
+                    }
+                }
+                .RightDivision {
+                    flex: 3;
+                    margin-left: 0.2em;
+                    .Text {
+                        color: black;
+                    }
+                }
+            }
+        }
+        .DescriptionDivision {
+            textarea {
+                width: 100%;
+                align-items: flex-start !important;
+                justify-content: flex-start !important;
+                min-height: 10em !important;
+                color: black;
+                border-color: $dark-gray;
+                padding: 1em !important;
+            }    
+        }
+        .CategoriesDivision {  
+            .Grid {
+                margin: 0;
+                .GridRow {
+                    justify-content: flex-start;
+                    padding: 0;            
+                    width: auto;
+                    .GridColumn {      
+                        margin: 0.2em;
+                        padding: 0em;
+                        width: auto;
+                        .TextDivision {                            
+                            padding: 0.2em 1em;
+                            background-color: $home-menu-bg-color;
+                            border-radius: 10em;  
+                            .Text {
+                                color: white;
+                            }
+                        }   
+                    }
+                }
+            }
+        }
+        .PhotoDivision {  
+            .Grid {
+                margin: 0;
+                .GridRow {
+                    justify-content: center;
+                    padding: 0;
+                    .GridColumn {             
+                        margin: 0.2em;
+                        padding: 0em;
+                        width: auto;
+                        height: 240px;                 
+                        .PhotoDivision { 
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .Photo {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .TitleDivision {
+            margin: 3em 0 1em 0;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: center;
+            .LeftSvgIcon {
+                fill: $home-menu-bg-color;
+                margin-right: 0.5em;
+            }
+            .Text{
+                font-size: 2em;
+                color: $home-menu-bg-color;
+            }
+        }
+        .WarningTitleDivision {
+            margin: 2em 0em 1em 0em;
+            .Text {
+                color: $home-menu-bg-color;
+                font-size: 2.5em;
+            }
+        }
+        .WarningDetailDivision {
+            width: 100%;            
+            background-color: $light-gray;
+            .Text {
+                max-width: 30em;
+                color: $home-menu-bg-color;
+                margin: auto;
+                padding: 0.5em;
+            }
+        }
+        .TopLogoDivision {
+            margin: 0em auto ;
+            width: 156px;
+            .LogoImage {                
+            }
+        }    
+        .ModalContentDivision{
+            text-align: center;
+            margin: auto;
+        }
+    }
+}
+

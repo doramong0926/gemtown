@@ -1,0 +1,99 @@
+@import "./../../config/variables.scss";
+
+.RootDivision {
+    background-image: url($home-background);   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .OutterDivision {
+        color: white;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        flex:1;
+        height: 50em;
+        .TopDivision {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 2.5;
+            .LogoImage {
+                height: 4em;
+            }
+            .DescriptionSvgIcon {     
+                height: 30px;
+                fill: white;
+                div {
+                    height: 30px;
+                    padding:0em;
+                    margin: 0em;
+                }
+            }  
+        }
+        .Top2Division {
+            padding: 0 0.4em 0em 0.4em; 
+            flex: 2;         
+            .IconImage {
+                height: 2.5em;
+                margin: 0em auto;
+            }
+            .Text {
+                font-size: 2.2em;
+                color: white;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .MiddleDivision {    
+            flex: 3.5;
+            padding: 0.5em;    
+            .MenuDivision {        
+                display: flex;            
+                align-items: center;
+                justify-content: center;               
+                .InnerDivision {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;   
+                    cursor: pointer;
+                    &:hover {
+                        .LeftSvgIcon, .RightSvgIcon {
+                            fill: $home-menu-bg-color !important;
+                        }           
+                    }
+                    .LeftSvgIcon {
+                        margin-top : 10px;
+                        margin-right : 1em;
+                    }
+                    .LeftSvgIcon, .RightSvgIcon{     
+                        height: 40px;
+                        fill: white;
+                        div {
+                            height: 40px;
+                            padding:0em;
+                            margin: 0em;
+                        }
+                    }    
+                }
+            }
+        }    
+        .BottomDivision {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $light-gray;
+            flex: 1.5;
+            .InnerDivision {
+                .Text {
+                    font-size: 0.5em;
+                }
+            }
+        }
+    }
+}

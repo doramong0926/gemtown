@@ -1,0 +1,94 @@
+@import "./../../config/variables.scss";
+
+.RootDivision {
+    .TopDivision {
+        background-color: $nav-bg-model-selected-color;    
+        .SortingFilterDivision {
+            max-width: $max-page-width;    
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;   
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1em 0em;
+            .LeftDivision { 
+                .ContentDivision {     
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 52em;                  
+                    .SubTitleDivision {
+                        background-color: black;                
+                        width : 8em;
+                        padding: 0.2em;
+                        margin: 0.2em;
+                        color: white;
+                        text-align: center;
+                        font-size: 1em;
+                        .Text {                    
+                            color: $nav-bg-model-selected-color;
+                        }  
+                    }
+                    .CategoryDivision { 
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: flex-start;     
+                        padding: 0.2em;
+                        margin: 0.2em 0em 0.2em 0.7em;
+                        .Text, .SelectedText {
+                            color: white;
+                            margin:0 0.7em;
+                            cursor: pointer;
+                        }
+                        .SelectedText {
+                            color: black;
+                        }
+                    }   
+                }            
+            }
+            .RightDivision {
+                .SortingIconDivision {
+                    background-color: black;
+                    width: 87px !important;
+                    height: 177px !important;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;         
+                    .SortingIcon {
+                        width: 87px !important;
+                        height: 87px !important;
+                    }
+                }
+            }
+        }
+    }
+    .BottomDivision {
+        background-color: $nav-bg-basic-color;  
+        .MenuItemDivision {
+            max-width: $max-page-width;    
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;   
+            margin-left: auto;
+            margin-right: auto;            
+            .Text, .SelectedText {
+                text-align: center;
+                width: 10em;
+                margin: 0;
+                padding: 2em 0em;
+                font-weight: bold;
+                color: $dark-gray;
+                cursor: pointer;
+            }
+            .SelectedText {
+                color: $nav-bg-model-selected-color;
+                text-decoration: underline;
+            }
+        }  
+    }    
+}

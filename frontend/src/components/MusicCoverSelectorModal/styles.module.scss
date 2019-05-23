@@ -1,0 +1,57 @@
+@import "./../../config/variables.scss";
+
+.rootDivision {
+    width: 720px !important;    
+    .SegmentDivision {
+        .ButtonDivision {         
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-top: 2em;
+            margin-right: 1em;
+            .Button {
+
+            }
+        }
+        .FreeCoverDivision, .PaidCoverDivision {
+            margin-bottom: 2em;            
+            .TitleDivision {
+                padding: 1em 1em;
+                .Text {
+                    color: $nav-bg-music-selected-color;
+                    font-weight: bold;
+                }
+            }
+            .CoverImageListDivision {
+                display: flex;
+                flex-direction: row;                
+                align-items: center;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                .CoverImageDivision {
+                    cursor: pointer;
+                    .ImageDivision {
+                        margin: 1em 1em 0.5em 1em;
+                        .Image {
+                            width: 140px !important;
+                            height: 140px !important;
+                        }
+                    }
+                    .PriceDivision {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .Text {
+                            margin: 0em;
+                            padding: 0em;
+                            color: $nav-bg-music-selected-color;
+                            text-align: center;
+                            font-size: 0.8em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

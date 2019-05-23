@@ -1,0 +1,250 @@
+@import "./../../config/variables.scss";
+
+.RootDivision {
+    .UploadDivision {
+        margin: 1.5em 4em;
+        .FilterDivision {
+            .InnderDivision {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 0.2em 0em;
+                height: 25px;
+                .TextDivision {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin: 0em 0em 0em 1em;
+                    width: 100%;
+                    .Text, .TextSelected {
+                        margin: 0.6em;
+                        font-size: 0.9em;
+                        text-align: center;
+                        color: $dark-gray;
+                        cursor: pointer;
+                    }
+                    .TextSelected {
+                        color: $nav-bg-music-selected-color;
+                    }
+                }
+            }
+        }
+        .TermsDivision {
+            margin-left: 0.5em;
+            margin-bottom: 3em; 
+            .checkBoxDivision {                    
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                .TermsCheckBox {
+                    
+                } 
+                .Text {
+                    margin-left: 0.5em !important;
+                    padding-top: 0.1em;
+                }                   
+            }
+            .Text {
+                margin: 0.5em 0em;
+            }
+        }
+        .DescriptionDivision {
+            .DescriptionTextDivision {                    
+                margin: 2em 0em;
+                input {
+                    width: 100%;
+                    border-radius: 0 !important;
+                    padding: 0em !important;
+                    margin: 0em !important;
+                    padding-left: 1em !important;
+                    height: 2em !important;       
+                    border-color: $dark-gray;                    
+                }
+                textarea {
+                    width: 100%;
+                    align-items: flex-start !important;
+                    justify-content: flex-start !important;
+                    min-height: 10em !important;
+                    color: black;
+                    border-color: $dark-gray;
+                    padding: 1em !important;
+                }
+                textarea::placeholder {
+                    color: $dark-gray;    
+                    font-style: italic !important; 
+                }
+            }
+        }
+        .DetailInfoDivision {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .BoxDivision {
+                background-color: $nav-bg-music-selected-color;
+                width: 11em;
+                height: 8em;
+                margin : 0em 1em 0em 0em;
+                display: flex;
+                align-items: center;
+                justify-content: center;                
+                .Text {              
+                    max-width: 7em;      
+                    color: white;
+                    text-align: center;
+                }
+            }
+            .TextInputDivision {
+                width: 100%; 
+                margin: 0;
+                padding: 0em;
+                .TextDivision {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin: 0.5em 0em;
+                    .TitleText {
+                        width: 14em;
+                        color: black;
+                        margin: auto 0em;
+                        text-align: left;
+                    }
+                    .InputBox {         
+                        width: 100%;               
+                        opacity: 1 !important;
+                        input {
+                            width: 100%;
+                            border-radius: 0 !important;
+                            padding: 0em !important;
+                            margin: 0em !important;
+                            padding-left: 1em !important;
+                            height: 2em !important;
+                            color: black;
+                            border-color: $dark-gray !important;                            
+                        }
+                    }
+                }
+            }
+        }
+        .SelectFileFormDivision {
+            margin: 2em 0em;
+            width: 100%;
+            .SelectFileDivision {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;          
+                margin: 0.5em 0em 0.5em 0.2em;    
+                padding: 0em;  
+                .SelectedInput{      
+                    width: 36.5em;
+                    height: 2em;
+                    border: 1px solid $dark-gray;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;    
+                    color: $dark-gray;                    
+                    input {
+                        padding: 0em !important;
+                        margin: 0em;
+                        border-radius: 0em;
+                        width: 0.1px;
+                        height: 0.1px;
+                        opacity: 0;
+                        overflow: hidden;
+                        position: absolute;
+                        z-index: -1;
+                    }
+                    .FilenameText, .FilenamePlaceholderText {
+                        margin-left: 1em;
+                    }
+                    .FilenameText {                        
+                        color: black;
+                    }                    
+                    .FilenamePlaceholderText {
+                        font-style: italic;
+                        color: $dark-gray;
+                    }
+                }
+                .RightDivision, .FileRegisterRightDivision {
+                    cursor: pointer;         
+                    margin-left: 0.5em;  
+                    .DefaultIconDivision {
+                        margin: 0;
+                        height: 2em;
+                    }
+                }
+                .RightDivision {
+                    .DefaultIconDivision {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;  
+                    }
+                }
+                .FileRegisterRightDivision {                  
+                    .DefaultIconDivision {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        .DefaultIconText, .GemText {
+                            margin-bottom: 0;
+                            height: 25.2px;
+                            padding-top: 3px;
+                        }
+                        .GemText {
+                            color: #21ba45;
+                        }
+                        .GemIcon {
+                            margin-left: 0.2em;
+                            padding-top: 3px;
+                            fill: #21ba45;
+                            height: 10px;
+                            div {
+                                height: 10px;
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }        
+    }
+    .SubmitDivision {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 2em;        
+        .SubmitButton {
+            width :15em;    
+            background-color: transparent;
+            border: 2px solid $nav-bg-music-selected-color;
+            color: $nav-bg-music-selected-color;
+            border-radius: 0em;
+        }
+    }
+}
+
+.DefaultIconDivision {
+    padding: 0.1em 0em;
+    margin: auto 0.2em;
+    background-color: $nav-bg-music-selected-color;
+    width: 8em;
+    .DefaultIconText {
+        color: white;
+        text-align: center;
+    }
+}
+
+.StarText {
+    color: red;
+    position: relative;
+    bottom: 0.1em;
+    margin-right: 0.2em;    
+}

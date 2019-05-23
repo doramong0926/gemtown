@@ -1,0 +1,80 @@
+@import "./../../config/variables.scss";
+
+.RootDivision {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+
+    .OutterDivision {
+        max-width: $max-page-width !important;
+        margin: 0 auto !important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;    
+        padding: 1em;    
+        .CoverImageDivision {
+            .CoverImage {
+                width: 5em;
+                height: 5em;
+            }
+        }
+        .RightIDivision {
+            width: 90%;
+            .InfomationDivision {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                .TitleDivision {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding: 0.5em;
+                    margin: 0em;
+                    .Text {
+                        color: black;
+                        font-size: 1em;
+                        margin: 0em 0.5em;;
+                        padding: 0;
+                    }
+                }
+            }            
+            .PlayerDivision {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 0em 0.2em;                ;
+                .TimeDivision {
+                    padding: 0em 0.5em;
+                    margin: 0em;
+                    .Text {
+                        font-size: 1em;
+                    }
+                }
+                .PlayIconDivision {
+                    padding: 0em 0em 0em 1em;
+                    .PlayStopIcon {           
+                    }
+                }        
+                .Timeline{
+                    width: 100%;
+                    height: 5px;
+                    border-radius: 15px;
+                    background: rgba(0,0,0,.3);
+                }        
+                .TimelineHandle{
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;            
+                    background: rgba(0, 0, 0,1);
+                    position: absolute;
+                    bottom: 1.7em;
+                }
+            }
+        }
+    }
+}

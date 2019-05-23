@@ -1,0 +1,63 @@
+@import "./../../config/variables.scss";
+
+.RootDivision {
+    .OutterDivision {        
+        .MenuDivision {
+            background-color: $nav-bg-basic-color;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;            
+            .Text {
+                color: white;
+                text-align: center;
+                padding: 1em;
+                margin: 0em;
+                font-size: 0.8em;
+                cursor: pointer;
+            }
+            .DividerDivision {
+                width:1px;
+                height: 1em;
+                border: 0.5px solid white;
+            }
+        }
+        .CompanyInfoDivision {
+            padding-top:1em;
+            background-color: black;
+            .InnerDivision {
+                background-color: black;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                max-width: 80em;
+                margin-left: auto;
+                margin-right: auto;                
+                flex-wrap: wrap !important;
+                .Text {
+                    color: $dark-gray;
+                    text-align: center;
+                    padding: 0.2em 1em 0.2em 1em;
+                    margin: 0em;
+                    font-size: 0.8em;                    
+                }
+                .DividerDivision {
+                    width:1px;
+                    height: 1em;
+                    border: 0.5px solid $dark-gray;
+                }
+            }      
+        }
+        .CompanyCopyright {
+            background-color: black;
+            padding: 1em 0em 2em 0em;
+
+            .Text {
+                text-align: center;
+                color: $dark-gray;
+
+            }
+        }
+    }
+}

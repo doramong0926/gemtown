@@ -1,0 +1,175 @@
+@import "./../../config/variables.scss";
+
+.RootDivision {
+    .MusicListTypeADivision, .MusicListTypeBDivision {
+        .EmptyDivision {
+            height: 10em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .Text {
+                text-align: center;
+                color: white;
+            }
+        }
+    }    
+    .MusicListTypeADivision {   
+        .MusicGrid {
+            margin: 0;
+            .MusicRow {        
+                width: 95% !important;
+                margin-left: auto;
+                margin-right: auto;                
+                .MusicColumn {
+                    width: 224px !important;
+                    margin: 2em 0.5em;
+                    padding: 0em;
+                    cursor: pointer;
+                    &:hover {
+                        .IconDivision {
+                            display: inline;
+                        }
+                    }
+                    .MusicCoverImage {
+                        width: 224px !important;
+                        height: 224px !important;
+                    }
+                    .IconDivision {
+                        display: none;
+                        position: absolute !important;
+                        bottom: 5.5em;
+                        left: 5em;
+                        .PlayIcon, .InfoIcon, .ShareIcon {
+                            &:hover {
+                                color: $nav-bg-music-selected-color;     
+                            }
+                        }
+                    }
+                    .TitleText {
+                        font-weight: bold;
+                        font-size: 1em;
+                        margin: 0;
+                        margin-top: 1em;
+                    }
+                    .MusicianNameText {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .MusicListTypeBDivision {  
+        .MusicDivision {   
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            color : white;
+            margin: 1em 0em;
+            .ListNumberDivision {
+                width: 3em;
+            }
+            .CoverImageDivision {
+                margin-right: 2em;
+                .MusicCoverImage {
+                    width: 80px !important;
+                    height: 80px !important;
+                }
+            }
+            .PlayStopIconDivision {
+                .PlayIcon {
+                    cursor: pointer;
+                    &:hover {
+                        color: $nav-bg-music-selected-color;     
+                    }
+                }
+            }
+            .TitleDivision, .CreatorDivision, .TimeDivision {
+                width :20em;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 0;
+                .DescriptionText {
+                    color: $dark-gray;
+                    margin: 0em 1em;
+                }
+                .Text {
+                }
+            }
+            .TimeDivision {
+                width : 10em;
+            }
+            .HeartDivision {
+                width :12em;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                .HeartIcon {
+                    margin: 0em 1em;                 
+                    svg {
+                        //height: 10px;
+                        //width: 10px;
+                      }                      
+                      rect {
+                        // fill: aqua;
+                        // height: 190px;
+                        // stroke: darkmagenta;
+                        // width: 190px;
+                      }   
+                }
+                .Text {
+
+                }
+            }
+            .PriceIconDivision {
+                width : 6em !important;
+                text-align: center;
+                cursor: pointer;     
+                .HoverDivision {
+                    background-color:  $nav-bg-music-selected-color !important;          
+                    display: none;
+                    .PriceText {
+                        padding: 0.3em;
+                        color: white;
+                    }
+                }
+                .NomalDivision {
+                    border: 1px solid $nav-bg-music-selected-color;    
+                    .PriceText {
+                        padding: 0.3em;
+                        color: $nav-bg-music-selected-color;
+                    }
+                }
+                &:hover {                    
+                    background-color:  $nav-bg-music-selected-color !important;   
+                    .HoverDivision{
+                        display: inline;
+                        .PriceText {
+                            padding: 0.3em;
+                            color: white;
+                        }
+                    }
+                    .NomalDivision {
+                        display: none;
+                    }
+                }                
+            }
+            .RankingDivision {
+                margin: 0em 2em;
+                .RankingIcon {
+
+                }
+            }
+            .DividerDivision {
+                border-right: 1px solid $dark-gray;
+                width: 0px;
+                height: 3em;      
+                margin-right: 2em;          
+            }
+        }
+    }
+}

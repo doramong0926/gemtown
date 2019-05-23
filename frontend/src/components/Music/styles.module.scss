@@ -1,0 +1,60 @@
+@import "./../../config/variables.scss";
+
+.RootDivision {
+    background-color: black;   
+    .FilterDivision {
+        margin-top: 0.5em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        font-weight: bold;
+        .FilterTitleText {
+            color: $dark-gray;
+        }
+        .FilterDescriptionText {
+            margin-left: 1em;
+            color: $nav-bg-music-selected-color;
+        }
+    }
+    .MusicListDivision {
+        color: white;
+        max-width: $max-page-width;
+        font-size: 1em;
+        margin: auto;
+        padding: 4em 0em 1em 0em;    
+        .TitleDivision {
+            margin-bottom: 0.5em;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: flex-start;
+            .TitleText {
+                font-weight: bold;
+                font-size: 1.5em;            
+            }
+            .DescriptionText {
+                margin-left: 1em;
+            }
+        }
+        .Divider {
+            margin: 0em;
+            padding: 0em;
+            border-width: 0.03em !important;
+            border-color: $dark-gray !important;
+        }
+        .ShowAllDivision {
+            background-color: $nav-bg-music-selected-color;
+            padding: 1em;
+            margin: 1em 0;        
+            .Text {
+                text-align: center;
+                a { 
+                    cursor: pointer;
+                    color: white;
+                }
+            }
+        }
+    }    
+}
+

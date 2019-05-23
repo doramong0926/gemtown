@@ -1,0 +1,184 @@
+@import "./../../config/variables.scss";
+
+.RootDivision {
+    .OutterDivision {
+        margin: 1.5em 4em;
+        padding: 0em 0em 3em 0em;
+        .TitleDivision {
+            margin: 3em 0 1em 0;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: center;
+            .LeftSvgIcon {
+                fill: $home-menu-bg-color;
+                margin-right: 0.5em;
+            }
+            .Text{
+                font-size: 2em;
+                color: $home-menu-bg-color;
+            }
+        }
+        .BlockchainInfoDivision {
+            margin: 2em 0em;
+            .InnerDivision {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                margin: 1em 0em;     
+                .LeftDivision {
+                    border-bottom: 1px solid $home-menu-bg-color;           
+                    width :9em;    
+                    min-height: 1.5em;      
+                    .Text {
+                        color: $home-menu-bg-color;       
+                        text-align: left;
+                    }
+                }
+                .RightDivision {
+                    border-bottom: 1px solid black;      
+                    margin-left: 1em;
+                    padding: 0em 0.5em;
+                    flex: 1;     
+                    min-height: 1.5em;
+                    .Text, .TxidText {
+                        color: black;     
+                        text-align: left;
+                    }
+                    .TxidText {
+                        font-size: 0.85em;
+                    }
+                }
+            }
+        }
+        .TagDivision {
+            margin: 2em 0em;
+            .InnerDivision {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                margin: 1em 0em;     
+                .LeftDivision {
+                    border-bottom: 1px solid $home-menu-bg-color;           
+                    width :5.7em;    
+                    min-height: 1.5em;      
+                    .Text {
+                        color: $home-menu-bg-color;       
+                        text-align: left;
+                    }
+                }
+                .RightDivision {
+                    border-bottom: 1px solid black;      
+                    margin-left: 1em;
+                    padding: 0em 0em 0em 0.5em;
+                    flex: 1;     
+                    min-height: 1.5em;
+                    .Text {
+                        color: black;     
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        .SelectFileFormDivision {
+            margin: 2em 0em;
+            width: 100%;
+            .SelectFileDivision {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;          
+                margin: 0.5em 0em 0.5em 0.2em;    
+                padding: 0em;  
+                .SelectedInput{      
+                    width: 36.5em;
+                    height: 2em;
+                    border: 1px solid $dark-gray;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;    
+                    color: $dark-gray;                    
+                    input {
+                        padding: 0em !important;
+                        margin: 0em;
+                        border-radius: 0em;
+                        width: 0.1px;
+                        height: 0.1px;
+                        opacity: 0;
+                        overflow: hidden;
+                        position: absolute;
+                        z-index: -1;
+                    }
+                    .FilenameText, .FilenamePlaceholderText {
+                        margin-left: 1em;
+                    }
+                    .FilenameText {                        
+                        color: black;
+                    }                    
+                    .FilenamePlaceholderText {
+                        font-style: italic;
+                        color: $dark-gray;
+                    }
+                }
+                .RightDivision, .FileRegisterRightDivision {
+                    cursor: pointer;         
+                    margin-left: 0.5em;  
+                    .DefaultIconDivision {
+                        margin: 0;
+                        height: 2em;
+                    }
+                }
+                .RightDivision {
+                    .DefaultIconDivision {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;  
+                    }
+                }
+                .FileRegisterRightDivision {                  
+                    .DefaultIconDivision {
+                        .DefaultIconText {
+                            margin-bottom: 0;
+                            height: 25.2px;
+                            padding-top: 3px;
+                        }
+                    }
+                }
+            }
+        }        
+    }
+    .SubmitDivision {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0em 0 3em 0;        
+        .SubmitButton {
+            width :15em;    
+            background-color: transparent;
+            border: 2px solid $nav-bg-music-selected-color;
+            color: $nav-bg-music-selected-color;
+            border-radius: 0em;
+        }
+    }
+}
+
+.DefaultIconDivision {
+    padding: 0.1em 0em;
+    margin: auto 0.2em;
+    background-color: $nav-bg-music-selected-color;
+    width: 8em;
+    .DefaultIconText {
+        color: white;
+        text-align: center;
+    }
+}
+
+.StarText {
+    color: red;
+    position: relative;
+    bottom: 0.1em;
+    margin-right: 0.2em;    
+}

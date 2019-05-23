@@ -1,0 +1,42 @@
+@import "./../../config/variables.scss";
+
+.RootDivision {
+    width: 100%;
+    .SegmentDivision {
+        margin: 0;
+        padding: 0;
+        .Image{
+            object-fit: cover;
+            z-index: 100;
+        }
+        .InnerDivision {
+            position: relative !important;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 2em;
+            padding-right: 2em;
+            bottom: 16em;
+            height: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            .ArrowDivision {
+                cursor: pointer;
+                .ButtonBack, .ButtonNext {
+                    background-color: transparent !important;
+                    border: 0 solid !important;
+                    outline: 0 solid !important;
+                    .SvgArrowLeft, .SvgArrowRight {
+
+                    }
+                }
+            }
+        }
+        .DotGroup {
+            height: 0;
+            position: relative !important;
+            bottom: 3em;
+        }
+    }
+}
